@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>api-service</artifactId>
+        <artifactId>user-management-service-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>api-impl</artifactId>
-    <name>API Implementation</name>
-    <description>Implementation of the API specification</description>
+    <artifactId>user-management-service</artifactId>
+    <name>User Management Service</name>
+    <description>Implementation of User Management Service</description>
 
     <dependencies>
         <!-- Internal Dependencies -->

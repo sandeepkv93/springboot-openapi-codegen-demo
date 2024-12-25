@@ -12,15 +12,15 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>api-service</artifactId>
+    <artifactId>user-management-service-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>API Service Parent</name>
-    <description>Parent project for API service modules</description>
+    <name>User Management Service Parent</name>
+    <description>Parent project for User Management Service and API modules</description>
 
     <modules>
-        <module>api-spec</module>
-        <module>api-impl</module>
+        <module>user-management-api-spec</module>
+        <module>user-management-service</module>
     </modules>
 
     <properties>

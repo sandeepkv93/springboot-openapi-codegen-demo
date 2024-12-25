@@ -1,11 +1,11 @@
-package com.example.apiimpl;
+package com.example.usermanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApiImplApplication {
+public class UserManagementApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ApiImplApplication.class, args);
+        SpringApplication.run(UserManagementApplication.class, args);
     }
 }

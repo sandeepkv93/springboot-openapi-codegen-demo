@@ -1,4 +1,4 @@
-package com.example.apiimpl.controller;
+package com.example.usermanagement.controller;
 
 import com.example.api.UsersApi;
 import com.example.model.User;

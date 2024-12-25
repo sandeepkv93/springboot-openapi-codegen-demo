@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>api-service</artifactId>
+        <artifactId>user-management-service-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>api-spec</artifactId>
-    <name>API Specification</name>
-    <description>OpenAPI specification and generated interfaces</description>
+    <artifactId>user-management-api-spec</artifactId>
+    <name>User Management API</name>
+    <description>OpenAPI specification and generated interfaces for User Management Service</description>
 
     <dependencies>
         <!-- Spring Boot -->
@@ -65,7 +65,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/users.yaml</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/user-management-api.yaml</inputSpec>
                             <generatorName>spring</generatorName>
                             <apiPackage>com.example.api</apiPackage>
                             <modelPackage>com.example.model</modelPackage>
