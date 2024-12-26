@@ -1,7 +1,8 @@
+# Place this file in: user-management-api/src/main/resources/openapi/user-management-api.yaml
 openapi: 3.0.3
 info:
   title: User Management API
-  description: API for managing user resources
+  description: REST API for User Management operations
   version: 1.0.0
 servers:
   - url: http://localhost:8080/api/v1
@@ -64,9 +65,11 @@ components:
           type: string
           minLength: 1
           maxLength: 100
+          pattern: '^[a-zA-Z0-9\s.-]+$'
         email:
           type: string
           format: email
+          pattern: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
       required:
         - name
         - email
