@@ -46,6 +46,9 @@
 
         <!-- SonarQube configuration -->
         <sonar.coverage.exclusions>**/model/**/*.java</sonar.coverage.exclusions>
+
+        <!-- Google Java Format -->
+        <google-java-format.version>1.19.2</google-java-format.version>
     </properties>
 
     <dependencyManagement>
@@ -109,6 +112,27 @@
                             </exclude>
                         </excludes>
                     </configuration>
+                </plugin>
+
+                <!-- Google Java Format Maven Plugin -->
+                <plugin>
+                    <groupId>com.spotify.fmt</groupId>
+                    <artifactId>fmt-maven-plugin</artifactId>
+                    <version>2.21.1</version>
+                    <configuration>
+                        <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
+                        <testSourceDirectory>${project.build.testSourceDirectory}</testSourceDirectory>
+                        <verbose>true</verbose>
+                        <filesNamePattern>.*\.java</filesNamePattern>
+                        <skipSortingImports>false</skipSortingImports>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.google.googlejavaformat</groupId>
+                            <artifactId>google-java-format</artifactId>
+                            <version>${google-java-format.version}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
             </plugins>
         </pluginManagement>
