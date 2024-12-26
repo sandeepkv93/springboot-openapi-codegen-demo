@@ -18,7 +18,7 @@
         <!-- Internal Dependencies -->
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>api-spec</artifactId>
+            <artifactId>user-management-api-spec</artifactId>
         </dependency>
 
         <!-- Spring Boot -->
