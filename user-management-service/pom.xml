@@ -19,6 +19,7 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>user-management-api-spec</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <!-- Spring Boot -->

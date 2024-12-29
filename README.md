@@ -44,7 +44,7 @@ This project demonstrates a contract-first approach to API development using Ope
 
 ### Prerequisites
 
-- JDK 21
+- JDK 17
 - Maven 3.8+
 - Your favorite IDE (IntelliJ IDEA recommended)
 
